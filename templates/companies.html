@@ -1,0 +1,14 @@
+<title>BioPharm</title>
+<h1>BioPharm Job Posting</h1>
+<table style="width:100%">
+ {% for company in content %}
+        <tr>
+       {% for key, value in company.items() %}
+          <td>
+              {{value}}
+          </td>
+       {% endfor %}
+       </tr>
+ {% endfor %}
+</table>
+
